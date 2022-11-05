@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
+            "expect-webdriverio",
+            "wdio-image-comparison-service",
+            "./src/types/wdio/wdio.d.ts",
+            "./src/types/wdio/wdio-chainable.d.ts"
+        ],
+        "target": "es2019",
+      "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "./test/**/*.ts",
+        "./src/types/**/*.ts"
+    ]
+}
