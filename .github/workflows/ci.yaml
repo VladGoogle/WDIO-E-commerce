@@ -9,10 +9,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install
+      - name: Install latest Node version
         run: npm install npm@latest -g
+      - name: Install dependencies
+        run: npm install
       - name: Test
-        run: npm run test:local
+        run: npm run test
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
